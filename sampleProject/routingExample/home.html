@@ -1,0 +1,33 @@
+<div>
+This value is  {{message}}
+<div>
+
+<div ng-controller="SecondController">
+	{{fullName}}
+</div>
+
+
+
+<div ng-controller="FirstController">
+	{{protypeMessage}}
+	<div ng-controller="SecondController">
+	{{protypeMessage}}<br><br>
+	{{fullName}}
+	
+	</div>
+</div>
+
+Out Side<div ng-controller="SecondController">
+	{{protypeMessage}}
+	
+</div>
+
+
+Interpolation
+
+<div ng-controller='parseController'>
+<input ng-model="inputData"/>
+
+<br /> Parsed data : {{parsedData}}
+
+</div>

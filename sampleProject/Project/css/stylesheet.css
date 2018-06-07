@@ -1,0 +1,223 @@
+body{
+  width : 100%;
+  margin : 0px;
+  box-sizing : border-box;
+  line-height : 1em;
+  //background-color : #330000;
+}
+
+.header{
+  font: italic bold 24px/30px Georgia, serif;
+  color:white; 
+  padding : 10px; 
+  background-color : #19181A;
+}
+
+.footer{
+  position : relative;
+  top : 34px;
+  font: italic bold 24px/30px Georgia, serif;
+  color:white; 
+  padding : 10px; 
+  background-color : #19181A;
+}
+
+.footer_links{
+  margin-left : 150px;
+  font : normal normal 13px/30px MONOSPACE;
+}
+
+[class*="col-"]{
+float:left;
+padding : 15px;
+box-sizing : border-box;
+}
+
+.col-1{width : 8.33%}
+.col-2{width : 16.66%}
+.col-3{width : 25%}
+.col-4{width : 33.33%}
+.col-5{width : 41.66%}
+.col-6{width : 50%}
+.col-7{width : 58.33%}
+.col-8{width : 66.66%}
+.col-9{width : 75%}
+.col-10{width : 83.33%}
+.col-11{width : 91.36%}
+.col-12{width : 100%}
+
+.vertical{
+  float:left !important; 
+  height : 489px !important; 
+  width : 0px; !important;
+  padding : 0px; !important;
+  margin-top : 36px;
+}
+
+.text-mute{
+  color : #808080; 
+  font-size : 12px;
+}
+
+.clear-fix{
+  clear : both;
+}
+
+.facebook{
+  float : right;
+  width : 30px;
+  height : 30px;
+  background : url(../images/social-icons-sprites-html-css.jpg) 415px 438px;
+}
+
+.facebook:hover{
+  float : right;
+  width : 30px;
+  height : 30px;
+  background : url(../images/social-icons-sprites-html-css.jpg) 415px 472px;
+}
+
+.google{
+  float : right;
+  width : 30px;
+  height : 30px;
+  background : url(../images/social-icons-sprites-html-css.jpg) 110px 81px;
+}
+
+.google:hover{
+  float : right;
+  width : 30px;
+  height : 30px;
+  background : url(../images/social-icons-sprites-html-css.jpg) 110px 115px;
+}
+
+.linkedin{
+  float : right;
+  width : 30px;
+  height : 30px;
+  background : url(../images/social-icons-sprites-html-css.jpg) 114px 527px;
+}
+
+.linkedin:hover{
+  float : right;
+  width : 30px;
+  height : 30px;
+  background : url(../images/social-icons-sprites-html-css.jpg) 114px 561px;
+}
+
+input[type="email"]{
+  border: 2px solid #808080;
+  border-radius: 5px;
+  height : 16px;
+}
+
+input[type="password"]{
+  border: 2px solid #808080;
+  border-radius: 5px;
+  height : 16px;
+}
+
+input[type="text"]{
+  border: 2px solid #808080;
+  border-radius: 5px;
+  height : 16px;
+}
+
+input:focus{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height : 24px;
+}
+
+input#emailId{
+  background-image : url(../images/mail-icon-small.png);
+  background-repeat : no-repeat;
+  background-position : -4px;
+  background-size: 40px;
+  text-indent : 20px;
+}
+
+input#emailId:focus{
+  background-image : none;
+  text-indent : 0px;
+}
+
+input#password{
+  background-image : url(../images/lock-icon.png);
+  background-repeat : no-repeat;
+  background-position : 7px;
+  background-size: 16px;
+  text-indent : 20px;
+}
+
+input#password:focus{
+  background-image : none;
+  text-indent : 0px;
+}
+
+input#password:focus + #showIcon{
+  display :none;
+}
+
+input#password:focus ~ #eyeIcon{
+  display :block;
+}
+
+#showIcon:active{
+
+}
+
+#eyeIcon{
+  display : none;
+  position : absolute;
+  right : 16%;
+  top:8px;
+  width: 22px;
+  height: 18px;
+}
+
+#showIcon{
+  position : absolute;
+  right : 16.5%;
+  width: 34px;
+  height: 34px;
+  background-image : url(../images/thumb_Fermata.png);
+  background-size: 31px;
+  background-repeat : no-repeat;
+  border: 2px solid grey;
+  border-radius : 5px;
+}
+
+.eyeIcon{
+  border: 2px solid grey;
+  width : 200px;
+  height : 100px;
+  image : url(../images/thumb_Fermata.png);
+}
+
+.link{
+  font-size : 14px;
+  color : orange;
+  float : left;
+}
+
+.sign_in{
+  color : white;
+  float : right;
+  border : 2px solid #804000;
+  background-color : #804000;
+  border-radius : 2px;
+  width :20%;
+  height : 30px;
+}
+
+
+.sign_up{
+  color : white;
+  float : right;
+  border : 2px solid #003399;
+  background-color : #003399;
+  border-radius : 2px;
+  width : 20%;
+  height : 30px;
+}

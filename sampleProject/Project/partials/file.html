@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>
+         Login Page
+      </title>
+      <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+	  
+   </head>
+   <body >
+      <header class="header">
+         <span style="margin-left: 150px;">Welcome Page</span>
+      </header>
+      <div class="col-6" style=" margin-top : 70px;">
+         <div style="max-width: 70%; margin-left : 150px;">
+            <div>
+               <p style="color : orange; font-size: 20px;">Sign In</p>
+               <span class="text-mute"> Use your credentials to login. Don't have one, create using sign up form.</span>
+            </div>
+            <div style="position: relative; top:40px;">
+               <input class="col-10" name="emailId" id="emailId" type="email" placeholder="enter email id" /> 
+               <div style="position:absolute; right:16%; bottom:10%">
+                  <div class="linkedin"></div>
+                  <div class="google"></div>
+                  <div class="facebook" onclick="focusPassword();"></div>
+               </div>
+            </div>
+            <div class="clear-fix"></div>
+            <div style="position: relative; top:70px;">
+               <input style="position: relative;" class="col-10" name="password" id="password" type="password" placeholder="password" /> 
+               <input type="button" id="showIcon" onmousedown="clicked()"; onmouseup="released();" onmouseleave="released();"/>
+  	       <i style="background:none; border : none;" id="eyeIcon" onmouseup="released();focusPassword();" onmouseleave="released();focusPassword();" onmousedown="focusPassword();clicked();"><img src="../images/eye.png"></i>
+	    </div>
+            <div style="position: relative; top:110px;max-width: 83%">
+               <a href="#" class="link">forgot your password?</a>
+               <button class="sign_in">Sign In</button>
+            </div>
+            <div class="clear-fix"></div>
+         </div>
+      </div>
+      <hr class="col-1 vertical">
+      <div class="col-5" style=" margin-top : 70px;">
+         <div style="max-width: 70%; margin-left : 70px;">
+            <p style="color : rgb(178, 162, 226); font-size: 20px;">Sign Up</p>
+            <div style="float : left">
+               <div class="linkedin"></div>
+               <div class="google"></div>
+               <div class="facebook"></div>
+            </div>
+            <div class="clear-fix"></div>
+            <span class="text-mute">Or fill up below form.</span>
+            <div style="position : relative; top : 10px">
+               <input type="text" style="float : left;" class="col-5" placeholder="first name"/>
+               <input type="text" style="float : right;" class="col-5" placeholder="last name"/>
+            </div>
+<div class="clear-fix"></div>
+            <div style="position : relative; top : 40px">
+               <input type="email" style="float : left;" class="col-5" placeholder="email"/>
+               <input type="password" style="float : right;" class="col-5" placeholder="password"/>
+            </div>
+            <div class="clear-fix"></div>
+            <div style="position: relative; top:80px;">
+               <button class="sign_up">Sign Up</button>
+            </div>
+         </div>
+      </div>
+      <div class="clear-fix"></div>
+      <footer class="footer">
+         <div class="footer_links">
+            <span >Policy</span> |
+            <span >Terms</span> |
+            <span >Contact Us</span>
+         </div>
+      </footer>
+	  <script src="../js/app/app.js"></script>
+	  <script src="../js/routing/appRouting.js"></script>
+      <script>
+         function clicked(){
+           document.getElementById("password").type = "text";
+         };
+         function focusPassword(){
+           document.getElementById("password").focus();
+         };
+         function released(){
+           document.getElementById("password").type = "password";  
+         }
+      </script>
+   </body>
+</html>

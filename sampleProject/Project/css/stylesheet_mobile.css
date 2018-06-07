@@ -1,0 +1,13 @@
+body{
+  max-width : 100%;
+  margin : 0px;
+  box-sizing : border-box;
+  line-height : 2em;
+}
+
+.mobileHeader{
+  font: italic bold 24px/30px Georgia, serif;
+  color:white; 
+  padding : 10px; 
+  background-color : #19181A;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<script src="angular.min.js"></script>
+<script>
+
+
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+   $scope.getFocusLastBtn = function(e){
+		if(e.keyCode == 9 && !e.shiftKey){
+
+		document.getElementById('read1').focus();
+		e.preventDefault();
+		}
+	}
+	$scope.getFocusFirstBtn = function(e){
+		if(e.keyCode == 9 && e.shiftKey){
+
+		document.getElementById('btn1').focus();
+		e.preventDefault();
+		}
+	}
+
+
+});
+
+
+
+//document.getElementById("btn1").addEventListener("onkeydown", function(event){
+//alert("clicked");
+    //document.getElementById('read1').focus();
+	//event.preventDefault()
+//});
+</script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl" tabindex="-1">
+ <span tabindex="1" autofocus="true" id="read1"  ng-keydown="getFocusFirstBtn($event);">click here</span>
+<p id="read2">Input something in the input box:</p>
+<label for="name" tabindex="0">Name First</label>
+<input type="checkbox" aria-hidden="true" tabindex="-1">
+Name: <input type="text" ng-model="name" id="name" aria-label="read2 read1" aria-hidden="true" >
+<p ng-bind="name" ></p>
+
+<button onclick="alert('clicked');" ng-keydown="getFocusLastBtn($event);" id="btn1"> click me</button>
+
+<div id="read10" tabindex="0">hello</div>
+
+</div>
+
+</body>
+</html>

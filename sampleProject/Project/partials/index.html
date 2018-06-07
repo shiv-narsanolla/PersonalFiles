@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>
+         Login Page
+      </title>
+      <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+	  <script src="../lib/angular.min.js"></script>
+	  <script src="../lib/angular-route.min.js"></script>
+	  <script src="../lib/angular-route.js"></script>
+   </head>
+   <body ng-app="myApp">
+      <header class="header">
+         <span style="margin-left: 150px;">Welcome Page</span>
+      </header>
+      <ng-view></ng-view>
+	  {{1+1}}
+      <footer class="footer">
+         <div class="footer_links">
+            <span >Policy</span> |
+            <span >Terms</span> |
+            <span >Contact Us</span>
+         </div>
+      </footer>
+	  <script src="../js/app/app.js"></script>
+	  <script src="../js/routing/appRouting.js"></script>
+      <script>
+         function clicked(){
+           document.getElementById("password").type = "text";
+         };
+         function focusPassword(){
+           document.getElementById("password").focus();
+         };
+         function released(){
+           document.getElementById("password").type = "password";  
+         }
+      </script>
+   </body>
+</html>
